@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CatLover</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <div class="sidebar">
+        <h2>🐾 CatLover</h2>
+        <ul>
+            <li onclick="showModal()">Entrar</li>
+            <li onclick="showPage('tipos')">Tipos</li>
+            <li onclick="showPage('adestradores')">Adestradores</li>
+            <li onclick="showPage('home')">História</li>
+        </ul>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="content">
+        <div id="home">
+            <h1>Bem-vindo à CatLover 🐾</h1>
+            <p>
+                A <strong>CatLover</strong> nasceu da paixão por gatos e pelo desejo de compartilhar conhecimento sobre
+                esses felinos incríveis.
+                Nossa missão é aproximar amantes de gatos, apresentar diferentes raças, suas origens e ainda oferecer os
+                melhores adestradores para ajudar na convivência.
+            </p>
+            <p>
+                Aqui, cada gato tem uma história para contar e cada tutor tem um espaço para aprender e compartilhar
+                experiências.
+            </p>
+        </div>
+
+        <div id="tipos" class="hidden">
+            <h1>Tipos de Gatos 😺</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://blog.feliway.com/hs-fs/hubfs/gato%20siam%C3%AAs%20filhote.png?width=1880&height=987&name=gato%20siam%C3%AAs%20filhote.png" alt="Siamês">
+                    <h3>Siamês</h3>
+                    <p>Origem: Tailândia. Gatos elegantes e muito comunicativos.</p>
+                </div>
+                <div class="card">
+                    <img src="https://tododia.com.br/wp-content/webp-express/webp-images/uploads/2024/10/quanto-custa-um-gato-persa-1068x1125.jpg.webp" alt="Persa">
+                    <h3>Persa</h3>
+                    <p>Origem: Pérsia (Irã). Famoso pelo pelo longo e rosto achatado.</p>
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/299039141_390871676503063_3975846690319718291_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-3TRi5x246oQ7kNvwEBa2eE&_nc_oc=AdnPY9gdevTb84O8aykeolCICEbrN-bI5ghu5QjHwaBoEPDirwfPm8zBnR9Niskc1js&_nc_zt=23&_nc_ht=scontent.fcpq4-1.fna&_nc_gid=We3wv4atYdzHqsE3_e9P_w&oh=00_AfaNvzayo9QYGebiWl8uoVPbTv6CqqJwXE_CyxvJF-LSNw&oe=68C5D80A" alt="Maine Coon">
+                    <h3>Maine Coon</h3>
+                    <p>Origem: EUA. O gigante gentil entre os gatos.</p>
+                </div>
+                <div class="card">
+                    <img src="https://drbigodes.pt/wp-content/uploads/Sphynx-preto-2048x1367.jpg" alt="Sphynx">
+                    <h3>Sphynx</h3>
+                    <p>Origem: Canadá. Conhecido por não ter pelos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="adestradores" class="hidden">
+            <h1>Adestradores da CatLover 🐕🐈</h1>
+            <p>Conheça nossa equipe de especialistas:</p>
+            <ul>
+                <li><b>Ana Paula:</b> Especialista em comportamento felino, com 10 anos de experiência.</li>
+                <li><b>Ricardo Silva:</b> Adestrador positivo, foca em técnicas sem estresse para gatos.</li>
+                <li><b>Mariana Costa:</b> Trabalha com gatos resgatados e socialização.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL DE LOGIN -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Entrar</h3>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <button>Entrar</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
